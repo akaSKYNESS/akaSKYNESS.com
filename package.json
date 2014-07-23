@@ -1,0 +1,12 @@
+{
+  "name": "akaSKYNESS.com",
+  "version": "1.0.0",
+  "author": "skyness",
+  "homepage": "akaSKYNESS.com",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-less": "*"
+  }
+}
