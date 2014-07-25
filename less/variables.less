@@ -15,11 +15,10 @@
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
 @brand-light:           #fcfcfc;
-@brand-dark:            #171b1e;
-@brand-success:         #5cb85c;
-@brand-info:            #5bc0de;
-@brand-warning:         #f0ad4e;
-@brand-danger:          #d9534f;
+@brand-dark:            #313131; //#171b1e;
+@brand-sky:             #a6daef; //#abe1fd;
+@brand-sunset:          #c0514a;
+
 
 
 //== Scaffolding
@@ -27,7 +26,7 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #171b1e;
+@body-bg:               @brand-dark;
 //** Global text color on `<body>`.
 @text-color:            @brand-light;
 
@@ -51,7 +50,7 @@
 }
 
 @font-family-sans-serif:  'brandon-grotesque', "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-serif:       "Droid Sans", Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   "Ubuntu Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
@@ -81,7 +80,8 @@
 
 //== Components
 //
-//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+//## Define common padding and border radius sizes and more. Values based on 14px 
+//## text and 1.428 line-height (~20px to start).
 
 @padding-base-vertical:     6px;
 @padding-base-horizontal:   12px;
@@ -242,7 +242,7 @@
 
 // Navbar links
 @navbar-default-link-color:                @brand-light;
-@navbar-default-link-hover-color:          #1c5a89;
+@navbar-default-link-hover-color:          #f4858e; //#8ac5c3;
 @navbar-default-link-hover-bg:             transparent;
 @navbar-default-link-active-color:         @brand-light;
 @navbar-default-link-active-bg:            transparent;
