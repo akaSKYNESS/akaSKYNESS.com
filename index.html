@@ -12,24 +12,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>akaSKYNESS</title>
-    <meta name="description" content="The portfolio of Andrew Kim aka SKYNESS,
-      a web designer and front-end developer based in Raleigh, NC">
-    <meta name="keywords" content="andrew, kim, andrew kim, akaSKYNESS, skyness,
-      websites, web design, developer, freelance">
+    <title>Andrew Kim aka SKYNESS</title>
+    <meta name="description" content="Andrew Kim aka SKYNESS • Web designer and front-end developer • Raleigh, NC">
+    <meta name="keywords" content="andrew kim, akaSKYNESS, aka, skyness, web design, developer, freelance">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans">
   </head>
   <body>
-    <section id="intro">
+    <section id="loading">
+      <span class="expand"></span>
+    </section>
+    <div id="wrapper">
+    <section id="intro" itemscope itemtype="http://schema.org/Person">
       <div id="background"></div>
       <nav class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container-fluid">
           <ul class="nav navbar-nav nav-justified">
               <li>
-                <a class="dark" href="mailto:hello@akaSKYNESS.com" target="_blank">
+                <a class="dark" href="mailto:hello@akaSKYNESS.com" target="_blank" itemprop="email">
                   <i class="fa fa-envelope fa-2x"></i>
                 </a>
               </li>
@@ -50,7 +52,7 @@
               </li>
               <li>
                 <figure>
-                  <img src="images/avatarproto2.jpg" alt="skyness avatar"  id="avatar" class="img-circle">
+                  <img itemprop="image" src="images/avatarproto2.jpg" alt="logo" id="avatar" class="img-circle">
                 </figure>
               </li>
               <li>
@@ -59,8 +61,8 @@
                 </a>
               </li>
               <li>
-                <a class="light hidden-xs" href="http://instagram.com/" target="_blank">
-                  <i class="fa fa-instagram fa-2x"></i>
+                <a class="light hidden-xs" href="" target="_blank">
+                  <i class="fa fa-pencil fa-2x"></i>
                 </a>
               </li>
               <li>
@@ -80,8 +82,8 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="colordark">
-              <h1>Andrew Kim</h1>
-              <h2>Web Designer &amp; Developer
+              <h1 itemprop="name">Andrew Kim</h1>
+              <h2 itemprop="jobTitle">Web Designer &amp; Developer
                 <!-- <span class="bullet">&bull;</span>
                 <span>Raleigh, NC</span> -->
               </h2>
@@ -90,7 +92,7 @@
           <div class="spacer visible-xs"></div>
           <div class="col-sm-6">
             <div class="colorlight">
-              <h1 class="notransform">aka SKYNESS</h1>
+              <h1 class="notransform" itemprop="brand">aka SKYNESS</h1>
               <h2>Foodie, Gamer, Christian</h2>
             </div>
           </div>
@@ -188,6 +190,7 @@
         </div>
       </div>
     </section>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>

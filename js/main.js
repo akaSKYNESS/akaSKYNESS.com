@@ -14,3 +14,8 @@ $('.carousel').on('slid.bs.carousel', function() {
 
   $(this).parents('.project').find('.counter').text(txt);
 });
+
+$(window).load(function() {
+  $('#loading').delay(2000).fadeOut("slow");
+  $('#wrapper').delay(2000).fadeIn("slow");
+});
