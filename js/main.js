@@ -16,6 +16,5 @@ $('.carousel').on('slid.bs.carousel', function() {
 });
 
 $(window).load(function() {
-  $('#loading').delay(2000).fadeOut("slow");
-  $('#wrapper').delay(2000).fadeIn("slow");
+  $('#wrapper').fadeIn("slow");
 });
