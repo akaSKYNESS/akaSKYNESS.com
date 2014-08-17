@@ -34,7 +34,7 @@
 @link-color:            @brand-light;
 
 //** Link hover color set via `darken()` function.
-@link-hover-color:      darken(@link-color, 15%);
+@link-hover-color:      #f4858e; //darken(@link-color, 15%);
 
 
 //== Typography
@@ -49,22 +49,29 @@
   font-style: normal;
 }
 
-@font-family-sans-serif:  'brandon-grotesque', "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:       "Droid Sans", Georgia, "Times New Roman", Times, serif;
+@font-face {
+  font-family: 'minion-pro';
+  src: url('../fonts/minion-pro.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-family-sans-serif:  "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       "minion-pro", Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   "Ubuntu Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
-@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
-@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+@font-size-base:          16px;
+@font-size-large:         20px;
+@font-size-small:         14px;
 
-@font-size-h1:            floor((@font-size-base * 3.4)); // ~47px
-@font-size-h2:            floor((@font-size-base * 0.93)); // ~13px
-@font-size-h3:            floor((@font-size-base * 2.5)); // ~35px
-@font-size-h4:            ceil((@font-size-base * 0.7)); // ~10px
-@font-size-h5:            floor((@font-size-base * 2.0)); // ~28px
-@font-size-h6:            floor((@font-size-base * 1.7)); // ~23px
+@font-size-h1:            54px;
+@font-size-h2:            15px;
+@font-size-h3:            40px;
+@font-size-h4:            20px;
+@font-size-h5:            32px;
+@font-size-h6:            27px;
 
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base:        1.428571429; // 20/14
@@ -244,7 +251,7 @@
 @navbar-default-link-color:                @brand-light;
 @navbar-default-link-hover-color:          #f4858e; //#8ac5c3;
 @navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         @brand-light;
+@navbar-default-link-active-color:         #f4858e;
 @navbar-default-link-active-bg:            transparent;
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
